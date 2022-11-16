@@ -1,6 +1,6 @@
 const sectionBigEl = document.querySelector (".sezione-grande");
 const sectionSmallEl = document.querySelector ("sezione-piccola");
-
+const imgBig = document.querySelector(".sezione-grande img src=") `<img src=image`
 
 const images = [
     {
@@ -26,4 +26,10 @@ const images = [
     }
 ];
 
-sectionBigEl.innerHTML = 
+for (let i = 0; i < images.length; i++) {
+    const element = images[i];
+    
+}
+
+
+sectionBigEl.innerHTML = element [0];
