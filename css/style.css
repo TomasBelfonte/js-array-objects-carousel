@@ -1,5 +1,26 @@
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0
+} */
+
+.card img{
+	width: 100%;
+	aspect-ratio: 16/10;
+	
+	
 }
+
+.row {
+	position: relative;
+}
+
+.card {
+	width: 700px;
+	position: absolute;
+	top: 30px;
+	left: 300px;
+	
+	
+}
+

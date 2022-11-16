@@ -1,6 +1,4 @@
-const sectionBigEl = document.querySelector (".sezione-grande");
-const sectionSmallEl = document.querySelector ("sezione-piccola");
-const imgBig = document.querySelector(".sezione-grande img src=") `<img src=image`
+const rowContainerEl = document.querySelector(".row");
 
 const images = [
     {
@@ -26,10 +24,40 @@ const images = [
     }
 ];
 
-for (let i = 0; i < images.length; i++) {
-    const element = images[i];
-    
-}
+function htmlPrint(rowContainerEl,images){
+
+    for (let i = 0; i < images.length; i++) {
+
+        const createDiv = document.createElement("div");
 
 
-sectionBigEl.innerHTML = element [0];
+        const createCardBig = document.createElement("div");
+        createCardBig.classList.add("card");
+
+        const createH2 = document.createElement("h2");
+        createH2.innerText=`${images[i].title}`;
+
+        const createP = document.createElement("p");
+        createP.innerText=`${images[i].text}`;
+
+        const createImg = document.createElement("img");
+        createImg.src=`${images[i].image}`; 
+
+
+
+        // appendere elementi
+        rowContainerEl.append(createDiv);
+        createDiv.append(createCardBig);
+        createCardBig.append(createImg);
+        createCardBig.append(createH2);
+        createCardBig.append(createP);
+        
+        
+        
+        
+    }
+};
+
+htmlPrint(rowContainerEl,images);
+
+
